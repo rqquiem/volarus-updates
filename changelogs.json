@@ -3,7 +3,7 @@
     {
       "version": "1.2.12",
       "notes": "# v1.2.12 — CGBUM chapters actually load\n\n## The bug\n\nOpening any CGBUM chapter showed blank pages. The images never arrived, so the\nreader sat on placeholders no matter how long you waited.\n\nThe cause was not, as an earlier note claimed, that the image host blocks\ndatacenter traffic. The real reason is that CGBUM's chapter image server\n(`cdn8.cgbum.com`) refuses every request that does not carry a special\n`cgbum_reader_ts` cookie, which the chapter page itself hands out when it\nloads. That cookie is marked HttpOnly, so the app's WebView cannot read it, and\nit also expects a `cgbum.com` referer. The backend captured neither, so every\nimage came back rejected and the reader had nothing to show.\n\n## The fix\n\n- **The backend now keeps the cookie.** When it fetches a chapter page it reads\n  the cookie the page sets and attaches it to each image in that chapter.\n- **The image proxy forwards it — but only where it belongs.** The cookie is\n  passed on only for CGBUM's own hosts, so the proxy cannot be used to leak\n  cookies to arbitrary sites.\n- **Offline downloads send it too.** Downloading a chapter for offline reading\n  now presents the same cookie and referer, so saved chapters actually contain\n  images instead of error pages.\n- **Covers were never affected** and still load as before.\n\nThe result: CGBUM chapter pages load normally, in the reader and in downloads.\n\n## Notes\n\n- The earlier v1.2.9 note blaming datacenter IP blocking has been corrected. The\n  host was reachable all along; it was waiting for the cookie.\n",
-      "releasedAt": "2026-10-02T14:42:35.336Z"
+      "releasedAt": "2026-10-04T18:12:10.003Z"
     },
     {
       "version": "1.2.11",
