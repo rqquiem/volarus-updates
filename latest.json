@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.2.17",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.2.17/volarus-v1.2.17.zip",
-  "zipSha256": "d951feeb80f76ee639cb94f5a20d1263b228e2fbe735069b429e89259992a340",
-  "zipBytes": 1258834,
+  "version": "1.2.18",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.2.18/volarus-v1.2.18.zip",
+  "zipSha256": "53cefcf88ac99fb0e7c9c07cdc50cdf36cc768bd7df5103b6eddd5b064a9c5dc",
+  "zipBytes": 1259768,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.2.17 — A cleaner reader\n\n## What changed\n\n- **Reader scrollbar removed** — the scroll indicator that appeared on the\n  right edge of the reader is gone. Chapters still scroll exactly as before,\n  the bar just no longer shows while you read.\n\n## Under the hood\n\n- The reader view hides its scrollbar on both Chromium/Android (WebKit) and\n  Firefox, so the page is edge-to-edge with no stray track or accent thumb.\n",
-  "releasedAt": "2026-10-05T06:11:37.079Z",
-  "signature": "uQye7kJI3l+orAiLwQ8cBg5sDzSIoZ2gshpH2bfBg+ilUK+tiFSIMhAfR1kYiaGRRE7pzfN33auyDIyhaV3cBQ=="
+  "notes": "# v1.2.18 — App Store buttons + icons\n\n## What changed\n\n- **New App Store icons** — the bottom nav (Home, Pack, Novels, Search, Library,\n  Account) now uses crisp SF Symbols-style glyphs when an App Store theme is\n  active. The original icons are unchanged for the Dark and Light themes.\n- **Every button got the iOS treatment** — the search field and its button, the\n  library toolbar, reader controls, carousel arrows, close buttons, and dialog\n  buttons are now rounded pills and circular fills in the App Store look.\n- **Cleaner arrows and controls** — the carousel arrows, zoom and close controls\n  use proper icon shapes instead of plain text symbols.\n\n## Under the hood\n\n- The icon swap and button pass are scoped to the App Store themes only, so the\n  default Dark theme and the Light theme render exactly as before.\n",
+  "releasedAt": "2026-10-05T06:59:36.842Z",
+  "signature": "KHTPRDodPBJWG/FyOafMIV4ihCbF+BI80G9CxhFdPprwCj6d6Bx0BLCRM2T63e6SCzmnKlOGYrDNEcCedrm6AQ=="
 }
