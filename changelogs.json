@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.2.18",
+      "notes": "# v1.2.18 — App Store buttons + icons\n\n## What changed\n\n- **New App Store icons** — the bottom nav (Home, Pack, Novels, Search, Library,\n  Account) now uses crisp SF Symbols-style glyphs when an App Store theme is\n  active. The original icons are unchanged for the Dark and Light themes.\n- **Every button got the iOS treatment** — the search field and its button, the\n  library toolbar, reader controls, carousel arrows, close buttons, and dialog\n  buttons are now rounded pills and circular fills in the App Store look.\n- **Cleaner arrows and controls** — the carousel arrows, zoom and close controls\n  use proper icon shapes instead of plain text symbols.\n\n## Under the hood\n\n- The icon swap and button pass are scoped to the App Store themes only, so the\n  default Dark theme and the Light theme render exactly as before.\n",
+      "releasedAt": "2026-10-05T06:59:36.842Z"
+    },
+    {
       "version": "1.2.17",
       "notes": "# v1.2.17 — A cleaner reader\n\n## What changed\n\n- **Reader scrollbar removed** — the scroll indicator that appeared on the\n  right edge of the reader is gone. Chapters still scroll exactly as before,\n  the bar just no longer shows while you read.\n\n## Under the hood\n\n- The reader view hides its scrollbar on both Chromium/Android (WebKit) and\n  Firefox, so the page is edge-to-edge with no stray track or accent thumb.\n",
       "releasedAt": "2026-10-05T06:11:37.079Z"
