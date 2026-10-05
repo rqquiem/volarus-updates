@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.2.16",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.2.16/volarus-v1.2.16.zip",
-  "zipSha256": "608379431e420f87210203931a931a911712e503ae073d95ee6b9b559a916939",
-  "zipBytes": 1258822,
+  "version": "1.2.17",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.2.17/volarus-v1.2.17.zip",
+  "zipSha256": "d951feeb80f76ee639cb94f5a20d1263b228e2fbe735069b429e89259992a340",
+  "zipBytes": 1258834,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.2.16 — Every source back online\n\n## Providers that were down are back (or gone)\n\nA full sweep of every source found a handful that had rotted: some had moved to\na new domain, some had been rebuilt as client-only apps, and some had simply\nshut down. This release repairs what can be repaired and retires what cannot.\n\n## What changed\n\n- **MangaKakalot** — rebuilt for its new home, `mangakakalot.fun`. Search,\n  Popular, Latest, details and **full chapter readers** all work again. The\n  reader fetches its page list from the site's GraphQL API and decrypts it\n  locally (AES-256-GCM), so complete chapters load instead of a 6-image\n  preview. Chapter numbers are taken from the site's own badges, so alternate\n  scanlation entries no longer show up as bogus chapter numbers.\n- **FreeWebNovel** — the site reorganised its URLs; search, popular and latest\n  now use the new endpoints and return results again.\n- **Removed** three sources that no longer have a working backend:\n  - **MangaFire** — its API now requires a single-use, session-bound token\n    that cannot be minted outside a browser. No working mirror exists.\n  - **LightNovelPub** — every mirror is either Cloudflare-blocked or has shut\n    down.\n  - **FlameComics** — the domain now redirects to Discord. No working mirror.\n\n## Under the hood\n\n- **Pack covers cleaned up** — dead `bacakomik` hosts and mis-pointed\n  `manhwaindo` entries were removed from the bundled packs, and packs were\n  regenerated so the affected collections point at live sources again. The pack\n  refresher had been reading the wrong field off the search API and silently\n  discovering no hosts, which left some collections empty; it now reads the\n  aggregated host list and refills every item.\n- **Fewer moving parts** — the source pickers, novel-source lists, referers and\n  search-relevance rules no longer mention the retired sources.\n",
-  "releasedAt": "2026-10-05T05:51:49.973Z",
-  "signature": "L9HTVWjOL3RhH7pTluYSsJqBN6RRuJxgtJ5DCYCVaeFZJYA3ys9gMIQw30e8rKNuIITCI1wzkEcsaLpJveWLCg=="
+  "notes": "# v1.2.17 — A cleaner reader\n\n## What changed\n\n- **Reader scrollbar removed** — the scroll indicator that appeared on the\n  right edge of the reader is gone. Chapters still scroll exactly as before,\n  the bar just no longer shows while you read.\n\n## Under the hood\n\n- The reader view hides its scrollbar on both Chromium/Android (WebKit) and\n  Firefox, so the page is edge-to-edge with no stray track or accent thumb.\n",
+  "releasedAt": "2026-10-05T06:11:37.079Z",
+  "signature": "uQye7kJI3l+orAiLwQ8cBg5sDzSIoZ2gshpH2bfBg+ilUK+tiFSIMhAfR1kYiaGRRE7pzfN33auyDIyhaV3cBQ=="
 }
