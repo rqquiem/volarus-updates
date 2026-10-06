@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.3.5",
+      "notes": "# v1.3.5 — Streaming search & shape-matched library skeletons\n\n- Search now streams partial results as providers respond (SSE `/api/search/stream`)\n  instead of waiting for the slowest provider, with a bounded per-provider timeout\n  and a grace period; the UI paints results as they arrive.\n- Library bookmarks and History now show skeletons that match their final shape in\n  every theme: inset row skeletons in the App Store list, card skeletons in the\n  light/dark grid. Search shows a results skeleton instead of a spinner.\n",
+      "releasedAt": "2026-10-06T01:30:44.508Z"
+    },
+    {
       "version": "1.3.4",
       "notes": "# v1.3.4 — App Store Light default & floating Library selection bar\n\n## What changed\n\n### Theme\n- **App Store Light is now the default UI theme** for new installs and for\n  anyone who has never picked a theme.\n- **App Store Dark** remains a peer option.\n- **Dark** and **Light** are kept as **Legacy** themes. Existing users keep\n  whatever they already selected — no stored preference is migrated.\n- The pre-paint theme script and the browser `theme-color` meta now match the\n  new default, so there is no dark flash on first load.\n\n### Library\n- The **selection bar** (\"N selected / Cancel / Delete\") is now floating\n  (`position: fixed`), so it is visible the moment Select mode starts instead\n  of only after scrolling to the bottom of the list.\n- It sits above the bottom navigation on mobile and flushes to the viewport\n  bottom from the sidebar edge on desktop, and the list reserves space so the\n  last row is never hidden.\n\n## Notes\n\n- No behavioural changes outside the default theme and the selection bar's\n  positioning. The novel reader theme (dark/sepia/light) is unchanged.\n",
       "releasedAt": "2026-10-06T00:52:54.118Z"
