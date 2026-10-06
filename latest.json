@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.8",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.8/volarus-v1.3.8.zip",
-  "zipSha256": "9a61731372e0401fb93e9558451baf404db883120076a937d1806205057bde11",
-  "zipBytes": 1255616,
+  "version": "1.3.9",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.9/volarus-v1.3.9.zip",
+  "zipSha256": "0259efc21fd7c0fbf6d32e4544ed6ce40bc36c1ca6be5f9374355b0f36e64f19",
+  "zipBytes": 1255798,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.8 — Library update badge reads \"New Ch. <n>\"\n\n- Fix: the Library update badge now reads \"New Ch. 45\" instead of \"New 45\".\n  In the App Store themes the Library renders inset list rows, whose badge\n  omitted the \"Ch.\" prefix; the legacy grid card already showed \"New Ch.\". Both\n  renderers are now consistent.\n- No other behaviour changed.\n",
-  "releasedAt": "2026-10-06T03:07:27.026Z",
-  "signature": "+UuW6BG/JITyXilC89dg8kQIfwbKXOVYU9ju1/Y3s4lbksLmII1/KdqMH/KyZS/gKrej6vQv5PhjzJE88GQhBg=="
+  "notes": "# v1.3.9 — Android bottom tab bar measures the real system nav inset\n\n- Fix: the bottom tab bar no longer reserves a fabricated 24px gap on Android.\n  It now measures the real system navigation inset — `env(safe-area-inset-bottom)`\n  plus the inset Capacitor injects on Android 15+ — and only reserves bottom\n  distance when the system's home/back/recents buttons are actually present.\n- On gesture-navigation phones the bar is 64px tall (was 88px); 3-button\n  navigation keeps the full distance so its buttons are never covered.\n- Keyboard-sized viewport gaps (larger than 48px) are ignored, so the bar is not\n  pushed up by the on-screen keyboard.\n- No other behaviour changed.\n",
+  "releasedAt": "2026-10-06T04:15:10.311Z",
+  "signature": "+sskAdouo9kA3fQyYsxtDjN2nNLJrZDvkMUpa+sYI310juC8MC+FlivJpRC6vMLTLK1xTFLqGIj+SY/zuQD7Dg=="
 }
