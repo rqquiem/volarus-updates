@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.14",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.14/volarus-v1.3.14.zip",
-  "zipSha256": "5b73c9b3318cd5e20b013a5df4d4ad6f4f6832f08e545fc36109b43290ecb5d9",
-  "zipBytes": 1321085,
+  "version": "1.3.15",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.15/volarus-v1.3.15.zip",
+  "zipSha256": "8dcd822ed436a4be95d2f84d4189da75eb8543ed2474e709238a23ae12ba98e2",
+  "zipBytes": 1274004,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.14 — accounts + level badges + cloud sync\n\n- New: an **Account** panel in the Account view lets you create an account or\n  sign in with email + password, and sync your reading progress to the cloud.\n- New: a numeric **level** now sits alongside your rank. You gain a level\n  every ~10 chapters (level 1 at 0, level 2 at 10 chapters, level 5 at 100,\n  level 10 at 500), and the Account hero shows a Level + XP progress bar with\n  \"N chapters to Lv N+1\".\n- Changed: each milestone badge's sub-label now shows the **level** it\n  unlocks (e.g. `Lv 5`) instead of the raw chapter count (`100 ch`).\n- Sync: **Sync Now** merges your local library with the cloud\n  (last-write-wins per row, chapter reads unioned) so progress carries across\n  devices. Signing out keeps everything local.\n- Note: cloud features stay fully optional — with no Supabase keys configured\n  the app remains local-first and the Account panel simply shows\n  \"Not configured\".\n",
-  "releasedAt": "2026-10-06T09:39:55.172Z",
-  "signature": "TAWYN4ypxbVQUQSAW+M8MHXnn7GNik5dUSqJhGmzDOXKbkAFIJluC48mE3P2uDTY0Huz8oRbowSGEd6jDvIoAw=="
+  "notes": "# v1.3.15 — optional cloud sync through the Vercel↔Pi connector\n\n- New: a second, fully optional cloud-sync path through the Vercel↔Pi\n  connector gateway. It uses bearer-token auth over a cross-origin\n  connection, and when it is configured it takes precedence over the direct\n  PocketBase backend.\n- The Account panel gains this second backend transparently — there is no UI\n  change, and sign-in and sync keep working exactly as before when the\n  connector is not configured.\n- Fixed: **Sync Now** now surfaces real errors instead of reporting a false\n  success when a sync request fails, so you can tell when something went\n  wrong.\n- Note: cloud features stay fully optional. With no backend URL configured the\n  app remains local-first and the Account panel simply shows\n  \"Not configured\".\n",
+  "releasedAt": "2026-10-06T22:13:59.677Z",
+  "signature": "NBv7panZxafK320GpUJdouE8BkALZUgwNaQcssN+y4Q7Is1dyGlr7ABzaI+/zzIPgaHN691Sbv40wumDVvi2DA=="
 }
