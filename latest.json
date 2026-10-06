@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.5",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.5/volarus-v1.3.5.zip",
-  "zipSha256": "cdb4f571a171a8d6022935071a6efd245fcab8f27a9b930e3b2566ba56455bc8",
-  "zipBytes": 1255230,
+  "version": "1.3.6",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.6/volarus-v1.3.6.zip",
+  "zipSha256": "a40558f2d4f96237c527849022c4bd3a50cdb7e96e317ec347dd10e911709372",
+  "zipBytes": 1255331,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.5 — Streaming search & shape-matched library skeletons\n\n- Search now streams partial results as providers respond (SSE `/api/search/stream`)\n  instead of waiting for the slowest provider, with a bounded per-provider timeout\n  and a grace period; the UI paints results as they arrive.\n- Library bookmarks and History now show skeletons that match their final shape in\n  every theme: inset row skeletons in the App Store list, card skeletons in the\n  light/dark grid. Search shows a results skeleton instead of a spinner.\n",
-  "releasedAt": "2026-10-06T01:30:44.508Z",
-  "signature": "ItHQqRewCPSld9glBhE0sbDuEDnhewpqMO+BPXnQO8+OyhNqdj5Spi1KYdA7P1vXEq2C+JdfPHLzsGYBfM95Dw=="
+  "notes": "# v1.3.6 — App Store fidelity for Library tabs & History\n\n- Library: the Bookmarks/History segmented control is now inset 16px so it\n  aligns with the view title, with equal-width segments (a proper iOS\n  segmented control) instead of a full-width, content-width pill row.\n- History (App Store themes): each day group renders as its own rounded inset\n  card with the section header above it, hairline-separated rows, a subtle\n  circular per-row delete button, a theme-aware chevron, and a centered swipe\n  action; the sticky History toolbar is now frosted glass.\n- Dark (Legacy) and Light (Legacy) themes keep their existing History styling.\n",
+  "releasedAt": "2026-10-06T02:06:33.080Z",
+  "signature": "spcAmdtFtv4in1N3S9VTxdvZ/ihxaBeHB15tTrhocR/qKqMu8ksPUr7+CU5Q5L6IPDIZSjOlmNiJBD25niVQDg=="
 }
