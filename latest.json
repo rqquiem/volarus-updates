@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.13",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.13/volarus-v1.3.13.zip",
-  "zipSha256": "b10b455060168e31ac0b7432e5a0af9d88fa9e53a223745180459718402cf76f",
-  "zipBytes": 1257221,
+  "version": "1.3.14",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.14/volarus-v1.3.14.zip",
+  "zipSha256": "5b73c9b3318cd5e20b013a5df4d4ad6f4f6832f08e545fc36109b43290ecb5d9",
+  "zipBytes": 1321085,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.13 — reader keep-awake + brightness dimmer\n\n- New: a **Keep Awake** switch in the reader's Display settings holds the\n  screen on while a chapter is open, so long chapters no longer time out\n  mid-scroll. It is opt-in and defaults to off, so an untouched install\n  behaves exactly as before.\n- New: a **Brightness** slider dims the reader page on its own, down to 80%\n  black, without dragging the toolbar or the settings sheet down with it. It\n  defaults to 0% (no dimming).\n- Both settings persist across chapters and app restarts, and the reader\n  releases the wake flag and resets the dimmer when it closes.\n- Note: the wake lock is applied on device through the native Android bridge\n  (`setKeepScreenAwake`), so keep-awake is Android-only; the brightness dimmer\n  works everywhere.\n",
-  "releasedAt": "2026-10-06T08:34:55.535Z",
-  "signature": "r7WZEX5AXZRHzyjKvoUdD42FzkeUKgrn6ASuAILMHCICLPSOM7xBj8LSGqg6FJ5Ft7k8sBxcoJdZ61P4GWRUCg=="
+  "notes": "# v1.3.14 — accounts + level badges + cloud sync\n\n- New: an **Account** panel in the Account view lets you create an account or\n  sign in with email + password, and sync your reading progress to the cloud.\n- New: a numeric **level** now sits alongside your rank. You gain a level\n  every ~10 chapters (level 1 at 0, level 2 at 10 chapters, level 5 at 100,\n  level 10 at 500), and the Account hero shows a Level + XP progress bar with\n  \"N chapters to Lv N+1\".\n- Changed: each milestone badge's sub-label now shows the **level** it\n  unlocks (e.g. `Lv 5`) instead of the raw chapter count (`100 ch`).\n- Sync: **Sync Now** merges your local library with the cloud\n  (last-write-wins per row, chapter reads unioned) so progress carries across\n  devices. Signing out keeps everything local.\n- Note: cloud features stay fully optional — with no Supabase keys configured\n  the app remains local-first and the Account panel simply shows\n  \"Not configured\".\n",
+  "releasedAt": "2026-10-06T09:39:55.172Z",
+  "signature": "TAWYN4ypxbVQUQSAW+M8MHXnn7GNik5dUSqJhGmzDOXKbkAFIJluC48mE3P2uDTY0Huz8oRbowSGEd6jDvIoAw=="
 }
