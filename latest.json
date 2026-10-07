@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.26",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.26/volarus-v1.3.26.zip",
-  "zipSha256": "8cf177789e28d8d49f27f829c17c5d1e58abd248b19c41c224bda58900a29a97",
-  "zipBytes": 1282540,
+  "version": "1.3.27",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.27/volarus-v1.3.27.zip",
+  "zipSha256": "973bfdfc41ecf441d5be854f7730009836863849f5301d5694b09d7f3ad66e73",
+  "zipBytes": 1284884,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.26 — Hide test-fixture entries\n\n- Fixed: leftover test/diagnostic entries (for example \"E2E History\",\n  \"Diag History\" and \"Drag History\", plus the earlier \"T\" stubs) no longer\n  appear in your History or Library. These came from old automated test runs.\n- The app now recognises fixture entries by their title prefix and by the\n  test-only sources they use, and filters them out everywhere — in History, in\n  the Library, in your reading stats, and when syncing — so they are never\n  shown and never uploaded to your account.\n- Real titles are unaffected: a genuine series such as \"Dragon Ball\",\n  \"Dragonslayer\" or \"Testament of Sister New Devil\" is still shown normally.\n- No other behaviour changed.\n",
-  "releasedAt": "2026-10-07T13:03:00.928Z",
-  "signature": "yzOzEs7kYR84RI/CIiY74jxF9BhnnHpaGWNsTUj/DLFdn5j86bfMht4J9L2ZxYmlKkzRg+inepN5YiNMb5ChDw=="
+  "notes": "# v1.3.27 — OTA update UI: progress bar, install phases, restart prompt\n\n- New: app updates now show real byte-level download progress. The install\n  streams from the server and the Updates panel (and the changelog modal) show a\n  true percentage bar with the downloaded/total MB as the bundle arrives, rather\n  than a static \"Downloading...\" label.\n- New: an install phase checklist walks through Download → Verify → Install →\n  Restart. The current step spins while it runs and each finished step gets a\n  checkmark, so it is clear what the update is doing.\n- New: an update-available banner appears in the Updates panel and at the top of\n  the changelog modal, showing the new version, the download size, the release\n  date and an Install action.\n- New: the changelog list is polished with a version chip, a \"Latest\" badge on\n  the newest entry, and human-friendly relative dates (today / yesterday /\n  N days ago).\n- New: after an update installs, a restart prompt offers \"Restart Now\" or\n  \"Later\". Choosing \"Later\" leaves a persistent reminder in the Updates panel\n  until the app is actually restarted.\n- Fixed: the `hidden` helper now hides and shows the new update panels\n  correctly — the OTA elements use scoped `.hidden` rules instead of a global\n  rule that would have clobbered the navigation slide-out and scroll-indicator\n  fades.\n- No other behaviour changed.\n",
+  "releasedAt": "2026-10-07T15:22:32.489Z",
+  "signature": "6JeWwlKw0b+TBDLV1PeYOIQZDuOAGEjjGWAkzArUcMySUlV2h2CjulcMgVWsdL7CMVJBsZhaD4ZOMPoZV/ktDQ=="
 }
