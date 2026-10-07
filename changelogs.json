@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.3.26",
+      "notes": "# v1.3.26 — Hide test-fixture entries\n\n- Fixed: leftover test/diagnostic entries (for example \"E2E History\",\n  \"Diag History\" and \"Drag History\", plus the earlier \"T\" stubs) no longer\n  appear in your History or Library. These came from old automated test runs.\n- The app now recognises fixture entries by their title prefix and by the\n  test-only sources they use, and filters them out everywhere — in History, in\n  the Library, in your reading stats, and when syncing — so they are never\n  shown and never uploaded to your account.\n- Real titles are unaffected: a genuine series such as \"Dragon Ball\",\n  \"Dragonslayer\" or \"Testament of Sister New Devil\" is still shown normally.\n- No other behaviour changed.\n",
+      "releasedAt": "2026-10-07T13:03:00.928Z"
+    },
+    {
       "version": "1.3.25",
       "notes": "# v1.3.25 — Ignore placeholder entries\n\n- Fixed: junk \"placeholder\" entries — a bookmark or history item whose title is a\n  single character such as \"T\" — no longer appear in your Library or History.\n  Some leftover cloud test data contained these stubs, which showed up as a \"T\"\n  series duplicated many times.\n- The app now filters these placeholders everywhere: when loading your Library\n  and History, when importing a backup, when merging cloud data, and when\n  syncing — so they never render and are never re-uploaded to your account.\n- Your real bookmarks and reading history are untouched.\n- No other behaviour changed.\n",
       "releasedAt": "2026-10-07T12:40:20.681Z"
@@ -144,11 +149,6 @@
       "version": "1.2.18",
       "notes": "# v1.2.18 — App Store buttons + icons\n\n## What changed\n\n- **New App Store icons** — the bottom nav (Home, Pack, Novels, Search, Library,\n  Account) now uses crisp SF Symbols-style glyphs when an App Store theme is\n  active. The original icons are unchanged for the Dark and Light themes.\n- **Every button got the iOS treatment** — the search field and its button, the\n  library toolbar, reader controls, carousel arrows, close buttons, and dialog\n  buttons are now rounded pills and circular fills in the App Store look.\n- **Cleaner arrows and controls** — the carousel arrows, zoom and close controls\n  use proper icon shapes instead of plain text symbols.\n\n## Under the hood\n\n- The icon swap and button pass are scoped to the App Store themes only, so the\n  default Dark theme and the Light theme render exactly as before.\n",
       "releasedAt": "2026-10-05T06:59:36.842Z"
-    },
-    {
-      "version": "1.2.17",
-      "notes": "# v1.2.17 — A cleaner reader\n\n## What changed\n\n- **Reader scrollbar removed** — the scroll indicator that appeared on the\n  right edge of the reader is gone. Chapters still scroll exactly as before,\n  the bar just no longer shows while you read.\n\n## Under the hood\n\n- The reader view hides its scrollbar on both Chromium/Android (WebKit) and\n  Firefox, so the page is edge-to-edge with no stray track or accent thumb.\n",
-      "releasedAt": "2026-10-05T06:11:37.079Z"
     }
   ]
 }
