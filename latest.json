@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.18",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.18/volarus-v1.3.18.zip",
-  "zipSha256": "47a82996260bf174efeefe0a8aa11d83fc2e73c763813a2f0cda17d1ae4857bd",
-  "zipBytes": 1279436,
+  "version": "1.3.19",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.19/volarus-v1.3.19.zip",
+  "zipSha256": "f53557860b3f612e919e5eda225aec7e8f5b6c4687b828935e1996ec3a0b08a0",
+  "zipBytes": 1279973,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.18 — professional legal documents, sign-in animation, account sync on sign-in\n\n- New: the Terms & Conditions and Privacy Policy are rewritten as full,\n  professional documents. They now render as a properly formatted document in\n  the legal modal — headings, lists and emphasis — instead of showing raw\n  markdown markers like `##` and `**`.\n- New: the sign-in gate animates in with a subtle, App Store-style sequence. The\n  card, fields, consent rows and buttons fade and rise in turn, inputs get a\n  focus ring, buttons press in, and error messages shake. All of the motion\n  honours the system \"reduce motion\" setting.\n- Fixed: signing in or creating an account now syncs the account with the\n  reading progress already on the device. Previously a fresh account could show\n  0 bookmarks, 0 history and level 0 even though the device held a full library;\n  the app now pushes the local progress up and refreshes your level right after\n  sign-in, with a toast reporting the synced counts.\n",
-  "releasedAt": "2026-10-07T01:25:10.893Z",
-  "signature": "1MWO745eYmzOOUJVdN1Ifb9BxyMmYDLZ1zBGcUJNvDHpsdHGIWq0d/u1YRcxvdqgu4YkljBHS9Cc8zXOVl65Cg=="
+  "notes": "# v1.3.19 — sync no longer reports the Pi as unreachable\n\n- Fixed: syncing a large library no longer fails with \"pi_unreachable\". The\n  sync used to upload your entire library in one request, which took longer\n  than the account gateway's timeout, so a sync that was actually succeeding\n  was reported as a failure. Progress is now uploaded in small batches, so\n  each request finishes quickly and the sync completes reliably.\n- Fixed: chapter-read entries are now written in the field names the account\n  backend expects, so reads sync correctly instead of being silently rejected.\n- Fixed: a brand-new account's level is no longer sent as 0 (which the backend\n  rejected); it is clamped to 1 so the profile save succeeds.\n- Note: your reading progress was never lost — it was always written on the\n  device. This release makes the cloud copy actually complete.\n",
+  "releasedAt": "2026-10-07T02:05:19.611Z",
+  "signature": "uALFjFXHC89n6F6MTyjvAV1ULTH4U57Bn0ya89jLOjyZvBeSID95h37xaREm5re1tN0XkoNLHCiQ+/g38hcJAw=="
 }
