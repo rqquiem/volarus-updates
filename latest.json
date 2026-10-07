@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.21",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.21/volarus-v1.3.21.zip",
-  "zipSha256": "4375eaab5f8ed86c0a1f5acb7dc76fd36bcdd92a7d7a4b449b637f93ed7d1db2",
-  "zipBytes": 1280459,
+  "version": "1.3.22",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.22/volarus-v1.3.22.zip",
+  "zipSha256": "c252d43632b5ac82ac71c9f8c02c48cfb290ef9e173802b2ba6c390329c260c6",
+  "zipBytes": 1281162,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.21 — stay signed in when the sync server is offline\n\n- Fixed: if the sync server (the Raspberry Pi behind the account gateway) goes\n  offline, you are no longer signed out. The app keeps your session and shows\n  your account as before, then syncs normally once the server is reachable\n  again.\n- Fixed: a server outage is no longer reported as a wrong password. Trying to\n  sign in while the server is unreachable now shows an honest \"can't reach the\n  sync server\" message instead of an incorrect \"invalid credentials\" error.\n- Note: your reading progress and library always stay on the device, so an\n  offline server never costs you anything locally.\n",
-  "releasedAt": "2026-10-07T06:00:40.175Z",
-  "signature": "3CnpKicwJrDM3IusJ6PFRgB446dEb2GnZNeF5WPvz/sH6e56hzZuQGzdfN/0d8/jMbqg2+bX6CvwFW7I7fJbBA=="
+  "notes": "# v1.3.22 — Mgeko source back online\n\n- Fixed: the Mgeko source returned no results and reported a TLS/certificate\n  error. The cause was not an expired certificate on Mgeko itself — it was local\n  network DNS interference returning the wrong server for the Mgeko host, which\n  made the secure connection fail. Mgeko's host is now resolved correctly, so\n  search, popular listings, details and chapters work again, with full\n  certificate validation preserved.\n- Fixed: Mgeko cover images hosted on the same affected host now load again\n  through the image proxy.\n- Note: this is a network-resolution fix only; nothing about your library or\n  reading progress changes.\n",
+  "releasedAt": "2026-10-07T07:24:14.833Z",
+  "signature": "KTyCmjm2R+xoMNgBtlljp+Ce9TECTtRqZy92C6zkbqLcm+OtN6cQ006NZ66dmP816cCakm9VhnI6n3nn4vOSAg=="
 }
