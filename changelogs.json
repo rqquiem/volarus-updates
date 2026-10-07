@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.3.20",
+      "notes": "# v1.3.20 — loading feedback on account buttons\n\n- New: the Sync Now, Create Account and Sign In buttons now show a spinning\n  loading ring while the app is working, so it is clear the tap registered and\n  something is happening.\n- New: all of those buttons press in with a subtle scale animation on tap,\n  matching the rest of the app's motion. The press animation is disabled when\n  the system \"reduce motion\" setting is on.\n- The button's label is preserved while loading and the button returns to its\n  normal state as soon as the action finishes, whether it succeeds or fails.\n",
+      "releasedAt": "2026-10-07T04:17:08.135Z"
+    },
+    {
       "version": "1.3.19",
       "notes": "# v1.3.19 — sync no longer reports the Pi as unreachable\n\n- Fixed: syncing a large library no longer fails with \"pi_unreachable\". The\n  sync used to upload your entire library in one request, which took longer\n  than the account gateway's timeout, so a sync that was actually succeeding\n  was reported as a failure. Progress is now uploaded in small batches, so\n  each request finishes quickly and the sync completes reliably.\n- Fixed: chapter-read entries are now written in the field names the account\n  backend expects, so reads sync correctly instead of being silently rejected.\n- Fixed: a brand-new account's level is no longer sent as 0 (which the backend\n  rejected); it is clamped to 1 so the profile save succeeds.\n- Note: your reading progress was never lost — it was always written on the\n  device. This release makes the cloud copy actually complete.\n",
       "releasedAt": "2026-10-07T02:05:19.611Z"
