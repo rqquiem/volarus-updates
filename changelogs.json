@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.3.21",
+      "notes": "# v1.3.21 — stay signed in when the sync server is offline\n\n- Fixed: if the sync server (the Raspberry Pi behind the account gateway) goes\n  offline, you are no longer signed out. The app keeps your session and shows\n  your account as before, then syncs normally once the server is reachable\n  again.\n- Fixed: a server outage is no longer reported as a wrong password. Trying to\n  sign in while the server is unreachable now shows an honest \"can't reach the\n  sync server\" message instead of an incorrect \"invalid credentials\" error.\n- Note: your reading progress and library always stay on the device, so an\n  offline server never costs you anything locally.\n",
+      "releasedAt": "2026-10-07T06:00:40.175Z"
+    },
+    {
       "version": "1.3.20",
       "notes": "# v1.3.20 — loading feedback on account buttons\n\n- New: the Sync Now, Create Account and Sign In buttons now show a spinning\n  loading ring while the app is working, so it is clear the tap registered and\n  something is happening.\n- New: all of those buttons press in with a subtle scale animation on tap,\n  matching the rest of the app's motion. The press animation is disabled when\n  the system \"reduce motion\" setting is on.\n- The button's label is preserved while loading and the button returns to its\n  normal state as soon as the action finishes, whether it succeeds or fails.\n",
       "releasedAt": "2026-10-07T04:17:08.135Z"
