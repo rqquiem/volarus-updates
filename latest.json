@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.25",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.25/volarus-v1.3.25.zip",
-  "zipSha256": "4e06599505cb10200922879b9a6f13960eb5cdddc3702e2550181174257b6a4b",
-  "zipBytes": 1282183,
+  "version": "1.3.26",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.26/volarus-v1.3.26.zip",
+  "zipSha256": "8cf177789e28d8d49f27f829c17c5d1e58abd248b19c41c224bda58900a29a97",
+  "zipBytes": 1282540,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.25 — Ignore placeholder entries\n\n- Fixed: junk \"placeholder\" entries — a bookmark or history item whose title is a\n  single character such as \"T\" — no longer appear in your Library or History.\n  Some leftover cloud test data contained these stubs, which showed up as a \"T\"\n  series duplicated many times.\n- The app now filters these placeholders everywhere: when loading your Library\n  and History, when importing a backup, when merging cloud data, and when\n  syncing — so they never render and are never re-uploaded to your account.\n- Your real bookmarks and reading history are untouched.\n- No other behaviour changed.\n",
-  "releasedAt": "2026-10-07T12:40:20.681Z",
-  "signature": "Ct4FGZQStOp8GrS+84d8pK8CbkoxUKfi5dDzTq+s64+rUtvFgO7KXV2RfHPHXOs0mA2Z5VLI34zzWeFD8DSBCQ=="
+  "notes": "# v1.3.26 — Hide test-fixture entries\n\n- Fixed: leftover test/diagnostic entries (for example \"E2E History\",\n  \"Diag History\" and \"Drag History\", plus the earlier \"T\" stubs) no longer\n  appear in your History or Library. These came from old automated test runs.\n- The app now recognises fixture entries by their title prefix and by the\n  test-only sources they use, and filters them out everywhere — in History, in\n  the Library, in your reading stats, and when syncing — so they are never\n  shown and never uploaded to your account.\n- Real titles are unaffected: a genuine series such as \"Dragon Ball\",\n  \"Dragonslayer\" or \"Testament of Sister New Devil\" is still shown normally.\n- No other behaviour changed.\n",
+  "releasedAt": "2026-10-07T13:03:00.928Z",
+  "signature": "yzOzEs7kYR84RI/CIiY74jxF9BhnnHpaGWNsTUj/DLFdn5j86bfMht4J9L2ZxYmlKkzRg+inepN5YiNMb5ChDw=="
 }
