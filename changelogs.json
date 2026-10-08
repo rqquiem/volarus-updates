@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.3.29",
+      "notes": "# v1.3.29 — Home skeleton loading + skeleton shimmer theme fix\n\n- Improvement: Home now shows shimmering skeleton placeholders while Rankings,\n  Recommendations and Continue Reading load, instead of blank or absent\n  sections — so the layout no longer jumps while those dynamic sections resolve.\n- Fixed: skeleton shimmer was invisible in the dark and light themes; the\n  placeholder colours were only defined for the App Store themes.\n",
+      "releasedAt": "2026-10-08T04:16:37.578Z"
+    },
+    {
       "version": "1.3.28",
       "notes": "# v1.3.28 — detail provider-menu race fix + broader leaderboard sources\n\n- Fixed: opening a title and rapidly switching to another no longer shows the\n  previous title's source list. Stale background lookups from an earlier title\n  are discarded instead of overwriting the current detail view.\n- Improvement: Top Charts / leaderboard now draws on the full provider pool\n  (bounded by a 6-second deadline) instead of stopping at the first few\n  responders, so more sources appear.\n",
       "releasedAt": "2026-10-08T03:45:35.148Z"
@@ -144,11 +149,6 @@
       "version": "1.2.21",
       "notes": "# v1.2.21 — A simpler, four-tab app\n\n## What changed\n\n- **Four tabs, nothing more.** The bottom navigation is now just **Home**,\n  **Search**, **Library** and **Account**. Two tabs have been retired and the\n  app is clearer and faster to get around.\n- **Packs are gone.** The Packs feature — curated collections, its detail view\n  and the pack progress/ordering tools — has been removed entirely. Curated\n  reading lists are no longer part of the app.\n- **Novels now live on Home.** The full Novels block — with its **Classic\n  Literature** and **Popular Books** sub-tabs and its own search box — has\n  moved onto the Home screen. You get the same catalogue without leaving Home.\n- **No more duplicate carousels.** The old \"Popular Novels\" and \"Classic\n  Literature\" carousels on Home have been removed, since the Novels block now\n  covers both.\n\n## Under the hood\n\n- Deleted the pack data layer (`packs-data.js`), the pack generation script and\n  the pack-powered Daily Event drawer.\n- Removed all pack view markup, styles and JavaScript, plus the retired Novels\n  and Pack navigation tabs and their views.\n- Home renders the Novels block in place, wired to the existing classics and\n  popular grids.\n- Updated the regression tests and added a guard that keeps the bottom nav at\n  four tabs and confirms the Pack feature stays removed.\n",
       "releasedAt": "2026-10-05T12:09:45.230Z"
-    },
-    {
-      "version": "1.2.20",
-      "notes": "# v1.2.20 — Top Charts & simpler feedback\n\n## What changed\n\n- **App Store \"Top Charts\".** If you use the App Store (Glass) theme, Rankings\n  now looks and behaves like the real App Store charts: a clean, numbered\n  vertical list — rank, cover thumbnail, title, subtitle and the ranking metric\n  on the right — grouped into an iOS-style inset list with hairline separators.\n  The type filters became an iOS segmented control and the criterion picker an\n  iOS select. Dark and Light themes keep the existing card grid, unchanged.\n- **Rankings on Home, full charts in their own view.** Home now shows a compact\n  **Top 5 preview**. Tap **See All** to open the full **Top Charts** view with\n  every criterion (Most Popular, Trending, Top Rated, Most Read, Longest,\n  Shortest, Newest, Recently Updated, Best Matches, Most Downloaded, A–Z,\n  Completed), type filters, the \"My reads\" toggle and endless scrolling.\n- **No more disliking.** The thumbs-down button is gone. Recommendations are\n  driven purely by what you actually read and bookmark, so nothing gets\n  silently hidden. (The underlying signal storage is kept dormant for a future\n  explicit \"Like\".)\n\n## Under the hood\n\n- Removed the dislike hard-veto and the dislike weighting from\n  `server/recommendation-engine.js`; explicit **likes** still boost titles.\n- Rankings rendering is now theme-aware: App Store themes get the numbered\n  Top Charts list (`.chart-row`), other themes get the card grid.\n- Switching themes re-renders the rankings immediately, so the presentation\n  always matches the active theme.\n- The full Top Charts list lives in a dedicated `#view-rankings` view with its\n  own pagination and infinite scroll.\n- Kept `user_signals` table and the `POST/GET /api/user/signals` endpoints\n  intact but unused by the UI, ready for a future Like feature.\n- Updated the engine, rankings-view and App Store theme test suites.\n",
-      "releasedAt": "2026-10-05T10:33:42.631Z"
     }
   ]
 }
