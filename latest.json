@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.28",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.28/volarus-v1.3.28.zip",
-  "zipSha256": "be84cb3eb5137c5d4e2f88e7351037fc53f8c6b64001114e55557a180f99e5a1",
-  "zipBytes": 1285009,
+  "version": "1.3.29",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.29/volarus-v1.3.29.zip",
+  "zipSha256": "0c042a71f4e689aabe3e2cbb71126a2359ec58a54525ebe9fe330eee09efefa2",
+  "zipBytes": 1285444,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.28 — detail provider-menu race fix + broader leaderboard sources\n\n- Fixed: opening a title and rapidly switching to another no longer shows the\n  previous title's source list. Stale background lookups from an earlier title\n  are discarded instead of overwriting the current detail view.\n- Improvement: Top Charts / leaderboard now draws on the full provider pool\n  (bounded by a 6-second deadline) instead of stopping at the first few\n  responders, so more sources appear.\n",
-  "releasedAt": "2026-10-08T03:45:35.148Z",
-  "signature": "7LkHL3+108Zu+ENy26qTvRxpOnpSUbrrXGgdw2fO3gevZ1ixZswtG4UXTcNIJUfymtKkaUDutjW8MKSzdyK2BQ=="
+  "notes": "# v1.3.29 — Home skeleton loading + skeleton shimmer theme fix\n\n- Improvement: Home now shows shimmering skeleton placeholders while Rankings,\n  Recommendations and Continue Reading load, instead of blank or absent\n  sections — so the layout no longer jumps while those dynamic sections resolve.\n- Fixed: skeleton shimmer was invisible in the dark and light themes; the\n  placeholder colours were only defined for the App Store themes.\n",
+  "releasedAt": "2026-10-08T04:16:37.578Z",
+  "signature": "XAh3kLUhAEZkxMU1XC0wMc/SPMCVbCEokfpu3vqPRHLb58Rn/uIpd8Tqdk/JMsw9CW+oPFAf0NGRPadE4qCLDQ=="
 }
