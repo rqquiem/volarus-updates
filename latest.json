@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.29",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.29/volarus-v1.3.29.zip",
-  "zipSha256": "0c042a71f4e689aabe3e2cbb71126a2359ec58a54525ebe9fe330eee09efefa2",
-  "zipBytes": 1285444,
+  "version": "1.3.30",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.30/volarus-v1.3.30.zip",
+  "zipSha256": "8c077662278ea10ddf628d477622c429bab1c834b8cf64e749f54de337bb2849",
+  "zipBytes": 1285577,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.29 — Home skeleton loading + skeleton shimmer theme fix\n\n- Improvement: Home now shows shimmering skeleton placeholders while Rankings,\n  Recommendations and Continue Reading load, instead of blank or absent\n  sections — so the layout no longer jumps while those dynamic sections resolve.\n- Fixed: skeleton shimmer was invisible in the dark and light themes; the\n  placeholder colours were only defined for the App Store themes.\n",
-  "releasedAt": "2026-10-08T04:16:37.578Z",
-  "signature": "XAh3kLUhAEZkxMU1XC0wMc/SPMCVbCEokfpu3vqPRHLb58Rn/uIpd8Tqdk/JMsw9CW+oPFAf0NGRPadE4qCLDQ=="
+  "notes": "# v1.3.30 — Rankings spread across the full provider pool\n\n- Fixed: the Top Charts / leaderboard was dominated by a single provider —\n  whichever source won the fetch race filled nearly the whole page. Rankings\n  now draw evenly from the full provider pool, so results are spread across\n  many sources.\n",
+  "releasedAt": "2026-10-08T05:06:28.777Z",
+  "signature": "XQf+EowJHhm0YIS1MqC6DmpMlRyfDC7tqi8jibNWcbtQeJ0fIdc0SlZwPUeKbfG5ePtE1vZGA03JzmaKYJgBDg=="
 }
