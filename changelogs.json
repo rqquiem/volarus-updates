@@ -3,7 +3,7 @@
     {
       "version": "1.3.31",
       "notes": "# v1.3.31 — Robust update check on launch + persistent sign-in\n\n- Fixed: the update check could be skipped entirely when the embedded local\n  server was slow to start — it was awaited inside the same try as the server\n  readiness check, so a readiness failure swallowed it. The check now always\n  runs at launch and, when an update exists, shows a dismissible banner on the\n  Home screen (View opens the changelog; dismissing remembers that version).\n- Fixed: you were signed out once the 24-hour session token aged out. Sessions\n  now renew automatically on activity, so an active account stays signed in\n  indefinitely and only ~30 days of total inactivity asks you to sign in again.\n",
-      "releasedAt": "2026-10-09T01:27:56.093Z"
+      "releasedAt": "2026-10-09T01:28:14.257Z"
     },
     {
       "version": "1.3.30",
