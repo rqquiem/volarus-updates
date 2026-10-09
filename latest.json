@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.38",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.38/volarus-v1.3.38.zip",
-  "zipSha256": "507ecb111df7716852439fa7cdeff628fbf29086488c7d072fdc616a2615410d",
-  "zipBytes": 1297611,
+  "version": "1.3.39",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.39/volarus-v1.3.39.zip",
+  "zipSha256": "7308283ce3c4f7b01f539ae2ffe2acbe611351973e661d0b87feed180c1237ea",
+  "zipBytes": 1295447,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.38 — reader sheet fixes, detail skeletons, mgeko chapter labels\n\n- Fixed: the reader's quick-settings and chapter sheets could not be closed.\n  They now close by tapping the backdrop, dragging the panel down, tapping the\n  new bottom handle bar, or pressing Escape, and they slide up when they open.\n- New: swipe up from the bottom of the reading screen to open the quick-settings\n  sheet, without leaving the page you are reading.\n- New: the title detail page now shows shimmer placeholders for the author line\n  and the genre tags while the source loads, instead of \"Loading...\" or nothing.\n- Fixed: mgeko chapters no longer show the \"-eng-li\" language tag — a chapter\n  now reads \"Chapter 1\" instead of \"1-eng-li\".\n",
-  "releasedAt": "2026-10-09T22:36:15.707Z",
-  "signature": "uKGNPvG3esOnyRt+/lUl+XLDSZ8//EkhtRUZtQFSY6tfs1Uq5U9sJFwbTkYtpOlb48n31TlM3sjj/kYoAAt3DQ=="
+  "notes": "# v1.3.39 — simpler reader sheet, a chapter dropdown, and a cleaner reading bar\n\n- New: the reader settings sheet is rebuilt to match iOS Settings — grouped inset\n  cards, one clear list, no clutter. The Performance option now sits with Display,\n  chapter navigation is a clean chevron row, and the desktop-only keyboard\n  shortcuts footer is gone.\n- New: pick any chapter right from the settings sheet. A new Chapter dropdown\n  lists every chapter and jumps straight to the one you choose, without leaving\n  the reader.\n- Improved: the reading bar is simpler. The zoom buttons, translate button,\n  settings gear and read-aloud button are removed, leaving Back, the chapter\n  title, Chapters and Quick settings. The full settings sheet opens from\n  \"All Settings\" in the quick-settings sheet.\n- Fixed: the settings sheet no longer falls off the bottom of the screen on\n  Android. It now sizes to the dynamic viewport and reserves the system\n  navigation inset, so every option stays reachable.\n",
+  "releasedAt": "2026-10-09T23:44:39.510Z",
+  "signature": "gjXG42O6NC88kGrYSPIzM1yLOFgRWzzym6P8H2JXykHRf+VDemOlllGjB6mJ55uwAGqXXAM8psBpQMG4odxKAA=="
 }
