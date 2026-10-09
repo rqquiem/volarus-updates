@@ -2,10 +2,10 @@
   "schema": 1,
   "version": "1.3.31",
   "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.31/volarus-v1.3.31.zip",
-  "zipSha256": "21e0ca1664d9ef1ccdfc3b216b4bf8c4e67c87818646034a828aca9ca19b645e",
+  "zipSha256": "9b88b61c07f5de599d33419b166c1661f0b55dc72caea06a131e77a0dab474b5",
   "zipBytes": 1286030,
   "minAppVersion": "1.2.11",
   "notes": "# v1.3.31 — Robust update check on launch + persistent sign-in\n\n- Fixed: the update check could be skipped entirely when the embedded local\n  server was slow to start — it was awaited inside the same try as the server\n  readiness check, so a readiness failure swallowed it. The check now always\n  runs at launch and, when an update exists, shows a dismissible banner on the\n  Home screen (View opens the changelog; dismissing remembers that version).\n- Fixed: you were signed out once the 24-hour session token aged out. Sessions\n  now renew automatically on activity, so an active account stays signed in\n  indefinitely and only ~30 days of total inactivity asks you to sign in again.\n",
-  "releasedAt": "2026-10-09T01:27:56.093Z",
-  "signature": "YRZTvbjHVL9cFqhG0E+/qQY1Guj61uTy4D9/N2CWph/cViCkIwiuTWUqAbluEGfEMxwxnZuY4X4Hd69oHYPpBA=="
+  "releasedAt": "2026-10-09T01:28:14.257Z",
+  "signature": "U1RsG/cGfo0z2Rvjxq1uVEXOP+SWQI0vG8CHVebHd73tLKAWrdl8iVuPltcRiQ/kWd0IbD6/ivkULn3EF0qJBw=="
 }
