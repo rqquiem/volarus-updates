@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.35",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.35/volarus-v1.3.35.zip",
-  "zipSha256": "2fdde4fe07278038471537d0e0b26169f51f72fc5436a0f8b4bf2c7d45038518",
-  "zipBytes": 1294333,
+  "version": "1.3.36",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.36/volarus-v1.3.36.zip",
+  "zipSha256": "6412fc73127fd4e63a024d87b7d3fcf6902a1c6502bf9000d88e68f4a70e75a3",
+  "zipBytes": 1294677,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.35 — multi-provider coverage + a compact source picker\n\n- New: titles now list every provider that carries them. Home, Latest and\n  search results are interleaved across sources and the backend waits for all\n  providers (bounded to 6 s) instead of stopping after the first few, so a\n  title shows all of its available sources instead of just one.\n- Fixed: the detail page's source enrichment no longer times out. Opening a\n  title that was listed with a single source now fills in the other providers\n  within a few seconds.\n- New: the App Store-style detail page shows the Sources picker as a compact\n  dropdown — a single row with the active source and a chevron that opens a\n  floating menu listing every provider, with a check on the active one.\n",
-  "releasedAt": "2026-10-09T17:16:43.707Z",
-  "signature": "4KKdPWNxSpwb28sLzsbZvPTUfp8rtgGSTWBtwYFOUBpCsXanno5FpC/Lp6/CR8pKmPjAvvUPUY1r/XcQDU94CQ=="
+  "notes": "# v1.3.36 — account level now matches the cloud\n\n- Fixed: the level shown on the Account screen could disagree with your\n  account. The big level badge was derived only from the reading log on this\n  device, so a device whose log lagged behind (for example after a reinstall or\n  a restored backup) showed a lower level than the cloud. The badge now reflects\n  your account's level, and falls back to the on-device level only when you are\n  signed out.\n- Fixed: opening the Account screen now pulls your latest cloud progress once\n  per session, so bookmarks, history and chapter reads from your other devices\n  appear on this one without a manual sync.\n- Fixed: syncing can no longer lower your account level. A device with fewer\n  local chapter reads than the account keeps the higher cloud level instead of\n  overwriting it.\n",
+  "releasedAt": "2026-10-09T17:58:28.514Z",
+  "signature": "cGIuVHZZAKPhNTAA4haa1fmLRyfriwZNlKOdyKrjEF6F6Y3n6hgIcklyyFQiMHGvUU3oseQ/fD33WHoG26LqDg=="
 }
