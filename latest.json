@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.37",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.37/volarus-v1.3.37.zip",
-  "zipSha256": "2efa8fec3f0fa1e72064d618ab910662e0977a61189a0d58502086aa6e50c476",
-  "zipBytes": 1296108,
+  "version": "1.3.38",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.38/volarus-v1.3.38.zip",
+  "zipSha256": "507ecb111df7716852439fa7cdeff628fbf29086488c7d072fdc616a2615410d",
+  "zipBytes": 1297611,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.37 — App Store reading bar, chapter picker and quick settings\n\n- New: the reader's top bar is rebuilt in the App Store style — a frosted bar with\n  SF-style icons, a centered chapter title and a chapter position subtitle.\n- New: pick any chapter without leaving the reader. A new Chapters button opens an\n  iOS inset list of every chapter with your current chapter marked.\n- New: a quick-settings sheet from the reading bar — reading mode, brightness,\n  auto-scroll and speed in one compact iOS panel, with a shortcut to all settings.\n- Fixed: the reader now reliably tells novels apart from manga/manhwa/manhua from\n  the title's content type, so novel-only controls (novel display options, read\n  aloud) never appear for comics, and comic-only controls never appear for novels.\n",
-  "releasedAt": "2026-10-09T21:56:15.175Z",
-  "signature": "tZNzTUNbb9zJBAfKTtVunc4UKVZ/gHMczQ8z9NocHG8ItoFkL/JQb7cDuXBbADFSwQmPOtHe1Ov3bCZDxCJXAw=="
+  "notes": "# v1.3.38 — reader sheet fixes, detail skeletons, mgeko chapter labels\n\n- Fixed: the reader's quick-settings and chapter sheets could not be closed.\n  They now close by tapping the backdrop, dragging the panel down, tapping the\n  new bottom handle bar, or pressing Escape, and they slide up when they open.\n- New: swipe up from the bottom of the reading screen to open the quick-settings\n  sheet, without leaving the page you are reading.\n- New: the title detail page now shows shimmer placeholders for the author line\n  and the genre tags while the source loads, instead of \"Loading...\" or nothing.\n- Fixed: mgeko chapters no longer show the \"-eng-li\" language tag — a chapter\n  now reads \"Chapter 1\" instead of \"1-eng-li\".\n",
+  "releasedAt": "2026-10-09T22:36:15.707Z",
+  "signature": "uKGNPvG3esOnyRt+/lUl+XLDSZ8//EkhtRUZtQFSY6tfs1Uq5U9sJFwbTkYtpOlb48n31TlM3sjj/kYoAAt3DQ=="
 }
