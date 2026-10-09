@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.36",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.36/volarus-v1.3.36.zip",
-  "zipSha256": "6412fc73127fd4e63a024d87b7d3fcf6902a1c6502bf9000d88e68f4a70e75a3",
-  "zipBytes": 1294677,
+  "version": "1.3.37",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.37/volarus-v1.3.37.zip",
+  "zipSha256": "2efa8fec3f0fa1e72064d618ab910662e0977a61189a0d58502086aa6e50c476",
+  "zipBytes": 1296108,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.36 — account level now matches the cloud\n\n- Fixed: the level shown on the Account screen could disagree with your\n  account. The big level badge was derived only from the reading log on this\n  device, so a device whose log lagged behind (for example after a reinstall or\n  a restored backup) showed a lower level than the cloud. The badge now reflects\n  your account's level, and falls back to the on-device level only when you are\n  signed out.\n- Fixed: opening the Account screen now pulls your latest cloud progress once\n  per session, so bookmarks, history and chapter reads from your other devices\n  appear on this one without a manual sync.\n- Fixed: syncing can no longer lower your account level. A device with fewer\n  local chapter reads than the account keeps the higher cloud level instead of\n  overwriting it.\n",
-  "releasedAt": "2026-10-09T17:58:28.514Z",
-  "signature": "cGIuVHZZAKPhNTAA4haa1fmLRyfriwZNlKOdyKrjEF6F6Y3n6hgIcklyyFQiMHGvUU3oseQ/fD33WHoG26LqDg=="
+  "notes": "# v1.3.37 — App Store reading bar, chapter picker and quick settings\n\n- New: the reader's top bar is rebuilt in the App Store style — a frosted bar with\n  SF-style icons, a centered chapter title and a chapter position subtitle.\n- New: pick any chapter without leaving the reader. A new Chapters button opens an\n  iOS inset list of every chapter with your current chapter marked.\n- New: a quick-settings sheet from the reading bar — reading mode, brightness,\n  auto-scroll and speed in one compact iOS panel, with a shortcut to all settings.\n- Fixed: the reader now reliably tells novels apart from manga/manhwa/manhua from\n  the title's content type, so novel-only controls (novel display options, read\n  aloud) never appear for comics, and comic-only controls never appear for novels.\n",
+  "releasedAt": "2026-10-09T21:56:15.175Z",
+  "signature": "tZNzTUNbb9zJBAfKTtVunc4UKVZ/gHMczQ8z9NocHG8ItoFkL/JQb7cDuXBbADFSwQmPOtHe1Ov3bCZDxCJXAw=="
 }
