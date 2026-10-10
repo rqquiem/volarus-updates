@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.44",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.44/volarus-v1.3.44.zip",
-  "zipSha256": "d1c7d50b43693131fc7017bdab5f231c6be5bcce908e05f5a21c17eb7de3f2e1",
-  "zipBytes": 1296475,
+  "version": "1.3.45",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.45/volarus-v1.3.45.zip",
+  "zipSha256": "a5dad6322aa40b1ec7f328c51a47d3269e0e4773cc8ee054153940d86611d78b",
+  "zipBytes": 1297858,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.44 — picking a chapter now continues from that chapter\n\n- Fixed: after choosing a chapter from the chapter sheet (or the chapter\n  dropdown in the reader settings), finishing that chapter could continue to the\n  wrong chapter — for example, jump from Chapter 3 to Chapter 7, and reaching the\n  end of Chapter 7 advanced to Chapter 4 instead of Chapter 8. The reader now\n  keeps the chapter you selected, so \"next\" is always the chapter after it.\n",
-  "releasedAt": "2026-10-10T11:12:45.605Z",
-  "signature": "WSKhO+mDhvFn5OZ/gUdnW2tCeBNjo37UNxQCn7xwcyvK/+CmTG2d+aV7OVwY+0MlOmQtYjWuGn31s7VsLf4UBw=="
+  "notes": "# v1.3.45 — ranks, EXP and titles, plus a new milestone rail\n\n- New: the Account screen's Milestones panel is rebuilt as a progression view.\n  Your current rank now leads with a spotlight — emblem, rank name, how much EXP\n  is left to the next rank, and a progress bar — and the ranks below are a\n  swipeable, snap-to-centre rail of medals. Unlocked medals pop in and glow in\n  their tier colour, and the current rank gently pulses.\n- New: EXP. Reading a chapter now earns a 1–5 EXP roll (3 is the most common\n  result) plus a streak bonus of +1 EXP for every 7 consecutive days, up to +5.\n  Ranks are measured in EXP instead of chapters, on a longer nine-tier ladder\n  from 100 up to 50,000 EXP, with new tiers beyond Mythic: Radiant, Astral and\n  Eternal.\n- New: equippable titles. Unlock cosmetic titles by reaching a rank or a reading\n  streak — Newcomer, Night Owl, Devoted Reader, Speedreader, Marathoner,\n  Completionist, Insomniac, Mythic and Eternal — and show one next to your rank\n  with the new \"Equipped Title\" dropdown.\n- New: three more naming themes (Pirate, Mecha and Dungeon), and the existing\n  themes gain higher rank names so every theme covers all nine tiers.\n- Removed: the Goals section in the Milestones panel — the chapter and weekly\n  goals with their inputs and progress bars are gone.\n- Fixed: your level now follows the EXP you have earned, and syncing carries\n  your total EXP between devices, so a level earned on one device is never lost.\n- Note: existing readers keep their progress — older reading history is given a\n  one-time, stable EXP value so totals stay meaningful.\n",
+  "releasedAt": "2026-10-10T18:40:15.909Z",
+  "signature": "yd+L+5+vjdQsbJYdeEM24PRgeL5wMMNB4F6y3QVgbvVOe6SeI2uQzgiY/+4Uufbkl63v4yd+i5Sa11aqB6fhAg=="
 }
