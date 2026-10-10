@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.39",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.39/volarus-v1.3.39.zip",
-  "zipSha256": "7308283ce3c4f7b01f539ae2ffe2acbe611351973e661d0b87feed180c1237ea",
-  "zipBytes": 1295447,
+  "version": "1.3.40",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.40/volarus-v1.3.40.zip",
+  "zipSha256": "a8e1f74ddd4bb666845da53fd2ab23972fbc33067bed171a957120be22cdcce6",
+  "zipBytes": 1295922,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.39 — simpler reader sheet, a chapter dropdown, and a cleaner reading bar\n\n- New: the reader settings sheet is rebuilt to match iOS Settings — grouped inset\n  cards, one clear list, no clutter. The Performance option now sits with Display,\n  chapter navigation is a clean chevron row, and the desktop-only keyboard\n  shortcuts footer is gone.\n- New: pick any chapter right from the settings sheet. A new Chapter dropdown\n  lists every chapter and jumps straight to the one you choose, without leaving\n  the reader.\n- Improved: the reading bar is simpler. The zoom buttons, translate button,\n  settings gear and read-aloud button are removed, leaving Back, the chapter\n  title, Chapters and Quick settings. The full settings sheet opens from\n  \"All Settings\" in the quick-settings sheet.\n- Fixed: the settings sheet no longer falls off the bottom of the screen on\n  Android. It now sizes to the dynamic viewport and reserves the system\n  navigation inset, so every option stays reachable.\n",
-  "releasedAt": "2026-10-09T23:44:39.510Z",
-  "signature": "gjXG42O6NC88kGrYSPIzM1yLOFgRWzzym6P8H2JXykHRf+VDemOlllGjB6mJ55uwAGqXXAM8psBpQMG4odxKAA=="
+  "notes": "# v1.3.40 — reader sheet iOS polish, fixed chapter count and chapter list\n\n- Improved: the reader settings sheet now reads like iOS Settings. The sheet\n  title is centered, Reading Mode uses text-only segments, Focus Mode uses a\n  standard iOS toggle, and chapter nav, Return to Details, engine status pills\n  and the theme swatches all follow the same equal-width iOS rows.\n- Fixed: the chapter count is now bold and correct in both the reading bar and\n  the Chapters header of the settings sheet. It counts from the first chapter,\n  so Chapter 1 of a 23-chapter title shows `1 / 23` instead of `23 / 23`.\n- Improved: the chapter picker and the settings-sheet Chapter dropdown now list\n  chapters oldest-first, with Chapter 1 at the top. The chapter picker marks the\n  current chapter with an iOS check instead of the old \"Last read\" text.\n- Fixed: the chapter list no longer draws a lighter box behind each row, and\n  long chapter titles now wrap to fit inside the sheet instead of overflowing.\n",
+  "releasedAt": "2026-10-10T01:01:02.691Z",
+  "signature": "LnINYaaNPalE3+1pAWnovGg0CbE6Kr/lbNOqcYzp3LJzntSTiYlit5uvc/f5lXxut7PSzA+czHsjqB2Yn+XODQ=="
 }
