@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.41",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.41/volarus-v1.3.41.zip",
-  "zipSha256": "58f31f4dfcbf8e784e900d668a657ec01e6d835e5a9747f148de920dcdef2598",
-  "zipBytes": 1296035,
+  "version": "1.3.42",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.42/volarus-v1.3.42.zip",
+  "zipSha256": "60a3b9a89fc84b0a8eec8f3aad49c1e192f7ed48e4e8cf459b8aaee61b53add6",
+  "zipBytes": 1296124,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.41 — reader progress line reset, account level on read\n\n- Fixed: the reader's progress line stayed full at the end of a chapter and did\n  not reset when the next chapter began. It now rewinds to the start of each new\n  chapter — including chapters loaded automatically as you reach the end of one —\n  and follows the chapter you are actually reading as you scroll.\n- Fixed: your account level did not increase after reading a chapter. The level\n  and the \"N chapters to Lv N+1\" counter now update from your chapters read on\n  this device, and a level earned on another device is never lowered.\n",
-  "releasedAt": "2026-10-10T01:28:21.000Z",
-  "signature": "fiQ9f0fCr42iMU38ORB4GjuvhYoMjeRpwE/x6xXewyLb94HrzRWZtaRiH5cEFy6O33q0eqxyPuMohHttCo2LAQ=="
+  "notes": "# v1.3.42 — reader auto-next going backward\n\n- Fixed: when a chapter auto-advanced at the end of the chapter, it could jump\n  **backwards** to the previous chapter (e.g. from Chapter 63 to Chapter 62\n  instead of Chapter 64). Chapters are now always ordered newest-first\n  internally, so the next chapter is always the correct one, whatever order the\n  source listed them in.\n- Fixed: \"Start Reading\" now always opens the first chapter, and opening a title\n  from Continue Reading keeps the chapter list in the right order.\n",
+  "releasedAt": "2026-10-10T02:09:58.667Z",
+  "signature": "/47UljxpBkwRnYhPF5nc3QPpwU2M0nn+w3SYmNk5eYCYZGhJ0wdrdOmv9ch1jU4yfAKD3XZs8ra/WorewkNQAQ=="
 }
