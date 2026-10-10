@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.40",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.40/volarus-v1.3.40.zip",
-  "zipSha256": "a8e1f74ddd4bb666845da53fd2ab23972fbc33067bed171a957120be22cdcce6",
-  "zipBytes": 1295922,
+  "version": "1.3.41",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.41/volarus-v1.3.41.zip",
+  "zipSha256": "58f31f4dfcbf8e784e900d668a657ec01e6d835e5a9747f148de920dcdef2598",
+  "zipBytes": 1296035,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.40 — reader sheet iOS polish, fixed chapter count and chapter list\n\n- Improved: the reader settings sheet now reads like iOS Settings. The sheet\n  title is centered, Reading Mode uses text-only segments, Focus Mode uses a\n  standard iOS toggle, and chapter nav, Return to Details, engine status pills\n  and the theme swatches all follow the same equal-width iOS rows.\n- Fixed: the chapter count is now bold and correct in both the reading bar and\n  the Chapters header of the settings sheet. It counts from the first chapter,\n  so Chapter 1 of a 23-chapter title shows `1 / 23` instead of `23 / 23`.\n- Improved: the chapter picker and the settings-sheet Chapter dropdown now list\n  chapters oldest-first, with Chapter 1 at the top. The chapter picker marks the\n  current chapter with an iOS check instead of the old \"Last read\" text.\n- Fixed: the chapter list no longer draws a lighter box behind each row, and\n  long chapter titles now wrap to fit inside the sheet instead of overflowing.\n",
-  "releasedAt": "2026-10-10T01:01:02.691Z",
-  "signature": "LnINYaaNPalE3+1pAWnovGg0CbE6Kr/lbNOqcYzp3LJzntSTiYlit5uvc/f5lXxut7PSzA+czHsjqB2Yn+XODQ=="
+  "notes": "# v1.3.41 — reader progress line reset, account level on read\n\n- Fixed: the reader's progress line stayed full at the end of a chapter and did\n  not reset when the next chapter began. It now rewinds to the start of each new\n  chapter — including chapters loaded automatically as you reach the end of one —\n  and follows the chapter you are actually reading as you scroll.\n- Fixed: your account level did not increase after reading a chapter. The level\n  and the \"N chapters to Lv N+1\" counter now update from your chapters read on\n  this device, and a level earned on another device is never lowered.\n",
+  "releasedAt": "2026-10-10T01:28:21.000Z",
+  "signature": "fiQ9f0fCr42iMU38ORB4GjuvhYoMjeRpwE/x6xXewyLb94HrzRWZtaRiH5cEFy6O33q0eqxyPuMohHttCo2LAQ=="
 }
