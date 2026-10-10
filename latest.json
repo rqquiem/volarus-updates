@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.3.42",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.42/volarus-v1.3.42.zip",
-  "zipSha256": "60a3b9a89fc84b0a8eec8f3aad49c1e192f7ed48e4e8cf459b8aaee61b53add6",
-  "zipBytes": 1296124,
+  "version": "1.3.43",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.3.43/volarus-v1.3.43.zip",
+  "zipSha256": "120fb411913c90a1c9d1bc4a4d17d315344cfe8b4d96ef2924e3f1f8d525922e",
+  "zipBytes": 1296407,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.3.42 — reader auto-next going backward\n\n- Fixed: when a chapter auto-advanced at the end of the chapter, it could jump\n  **backwards** to the previous chapter (e.g. from Chapter 63 to Chapter 62\n  instead of Chapter 64). Chapters are now always ordered newest-first\n  internally, so the next chapter is always the correct one, whatever order the\n  source listed them in.\n- Fixed: \"Start Reading\" now always opens the first chapter, and opening a title\n  from Continue Reading keeps the chapter list in the right order.\n",
-  "releasedAt": "2026-10-10T02:09:58.667Z",
-  "signature": "/47UljxpBkwRnYhPF5nc3QPpwU2M0nn+w3SYmNk5eYCYZGhJ0wdrdOmv9ch1jU4yfAKD3XZs8ra/WorewkNQAQ=="
+  "notes": "# v1.3.43 — chapter labels and recommendations that keep up\n\n- Fixed: Asura Scans chapter rows showed the number, subtitle and upload date\n  glued together (\"Chapter 276 Days Ago\"). Each chapter now reads \"Chapter N\"\n  (with its subtitle when the source provides one) and the upload date sits in\n  its own date slot.\n- Fixed: the Home recommendation rails (\"Recommended for You\", \"Because you\n  read ...\", \"More {genre}\") never changed after you read a chapter. Reads now\n  report their genres and content type to the recommendation profile, the\n  cached rails are invalidated on every library change, and returning Home\n  re-fetches them - so the rails visibly follow what you read.\n",
+  "releasedAt": "2026-10-10T05:04:49.584Z",
+  "signature": "Tmtgror+QzXO4c8lmtnwJTAdz/ONEg+qLnhTFDcEFYfgj1/Srn266kgf2jqZBPkIXraQPAYDINvA4e5JOTX+Dg=="
 }
