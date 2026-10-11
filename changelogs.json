@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.1",
+      "notes": "# v1.4.1 — FreeWebNovel works again\n\n- Fixed: the \"certificate failed\" error some readers hit on FreeWebNovel is\n  gone. The site itself was fine — the problem was a network issue on certain\n  connections, where the connection was quietly routed somewhere it didn't\n  belong. The app now finds the real site on its own, so pages load normally\n  again.\n- Fixed: FreeWebNovel novel pages now show their full chapter list once more.\n  Opening a title used to fail outright, and long novels could show only a\n  short, cut-off list of chapters. Both are corrected, so every chapter is\n  listed and reachable.\n- Improved: chapter text no longer carries the site's leftover watermark,\n  making for a cleaner read.\n- Note: no action needed on your part — just update and enjoy.\n",
+      "releasedAt": "2026-10-11T00:03:27.494Z"
+    },
+    {
       "version": "1.4.0",
       "notes": "# v1.4.0 — a faster app, honest storage numbers, and two new novel sources\n\n- New: two more English web-novel providers, ReadNovelFull and NovelFull, join\n  the library. Both live in a fresh \"Web Novels\" tab in the Home → Novels\n  section, so browsing them feels just like the sources you already know.\n- New: a real Storage Dashboard in Settings. It shows what the app actually\n  takes up on your device — the local database, offline downloads, app logs and\n  update bundles — with two new buttons: \"Clear App Cache\" (server caches only)\n  and \"Clean Up Orphans\", which removes leftover download folders that no longer\n  belong to anything in your library.\n- Fixed: cached data no longer sticks around forever. Saved server responses now\n  expire after 24 hours and expired ones are swept on startup, the \"Reset Cache\"\n  button clears them too, and the home feed refreshes at least every 30 minutes\n  instead of showing a stale list. The in-memory cache now measures real payload\n  size, so its numbers mean something.\n- Improved: everything loads faster. Providers reuse connections, chapter\n  details are fetched in small pooled batches instead of all at once, database\n  saves write once per batch, search results stream more smoothly, and long\n  chapter lists render the first 300 rows with a \"Show all N chapters\" expander.\n- Note: fonts load without blocking the page, so text and images appear sooner.\n",
       "releasedAt": "2026-10-10T23:22:29.433Z"
@@ -144,11 +149,6 @@
       "version": "1.3.18",
       "notes": "# v1.3.18 — professional legal documents, sign-in animation, account sync on sign-in\n\n- New: the Terms & Conditions and Privacy Policy are rewritten as full,\n  professional documents. They now render as a properly formatted document in\n  the legal modal — headings, lists and emphasis — instead of showing raw\n  markdown markers like `##` and `**`.\n- New: the sign-in gate animates in with a subtle, App Store-style sequence. The\n  card, fields, consent rows and buttons fade and rise in turn, inputs get a\n  focus ring, buttons press in, and error messages shake. All of the motion\n  honours the system \"reduce motion\" setting.\n- Fixed: signing in or creating an account now syncs the account with the\n  reading progress already on the device. Previously a fresh account could show\n  0 bookmarks, 0 history and level 0 even though the device held a full library;\n  the app now pushes the local progress up and refreshes your level right after\n  sign-in, with a toast reporting the synced counts.\n",
       "releasedAt": "2026-10-07T01:25:10.893Z"
-    },
-    {
-      "version": "1.3.17",
-      "notes": "# v1.3.17 — boot-screen hotfix for the v1.3.16 security update\n\n- Fixed: the Android app could hang forever on the boot/loading screen after\n  the v1.3.16 security update. The boot screen polls the local server's\n  readiness status, but the hardening had removed the cross-origin header that\n  read required, so the WebView blocked the response, the retry never fired and\n  the app never advanced past the loading page. The server now allows that one\n  read-only readiness check again while every sensitive endpoint stays locked\n  down exactly as before.\n- Fixed: the local server now answers on both IPv4 and IPv6 loopback, so\n  `localhost` resolves and connects on all devices. Some Android WebViews prefer\n  the IPv6 address, which the previous IPv4-only bind did not cover.\n",
-      "releasedAt": "2026-10-07T00:44:00.611Z"
     }
   ]
 }
