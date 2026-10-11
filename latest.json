@@ -2,10 +2,10 @@
   "schema": 1,
   "version": "1.4.3",
   "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.4.3/volarus-v1.4.3.zip",
-  "zipSha256": "f159948bc6cfb964cd6ca3014d960ce75b7478aa0d1d4a7ac62de1a9335c5317",
-  "zipBytes": 1298717,
+  "zipSha256": "063cac34326d0b72beaa6b32d191b4b9c083bd2126a9d7dacd9d31bc9af662ad",
+  "zipBytes": 1299195,
   "minAppVersion": "1.2.11",
   "notes": "# v1.4.3 — clearer sign-in and account creation\n\n- Improved: signing in and creating an account are now two separate views on\n  both the welcome screen and the Account tab. Each view shows only the fields\n  it needs, so it is always clear whether you are signing in or registering.\n- Improved: the email and password you type are kept while you switch between\n  the two views, so you never have to retype them.\n- Fixed: on the Account tab the Sign In and Create Account buttons no longer\n  appear at the same time.\n- Note: no action needed on your part — just update and enjoy.\n",
-  "releasedAt": "2026-10-11T09:51:22.704Z",
-  "signature": "PNHELZzoBuU0MUll0o9UZyM7BlLMzgMi/VT+lT/kwzYl1vDuRYnoZg7GrHap7cTJcsNvZ3A94x1X3i1GaiBQAw=="
+  "releasedAt": "2026-10-11T10:32:22.109Z",
+  "signature": "crAlWkfCcypq/mste3i/5IdEccQwAQGHwbHrWK9kE7cwcvislgLEmxhuBUu7ven7vylTsPhG+5cO5ojTQHV6DQ=="
 }
