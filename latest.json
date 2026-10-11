@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.1",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.4.1/volarus-v1.4.1.zip",
-  "zipSha256": "825ac570f94eb7ea3444da65f54144c234dcc1fbb0e4826705df4f938aa189ba",
-  "zipBytes": 1298388,
+  "version": "1.4.2",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.4.2/volarus-v1.4.2.zip",
+  "zipSha256": "47d2855306aae4b11af8fc01735dc7e5112b5cfb659c356486f327067f22042b",
+  "zipBytes": 1297681,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.1 — FreeWebNovel works again\n\n- Fixed: the \"certificate failed\" error some readers hit on FreeWebNovel is\n  gone. The site itself was fine — the problem was a network issue on certain\n  connections, where the connection was quietly routed somewhere it didn't\n  belong. The app now finds the real site on its own, so pages load normally\n  again.\n- Fixed: FreeWebNovel novel pages now show their full chapter list once more.\n  Opening a title used to fail outright, and long novels could show only a\n  short, cut-off list of chapters. Both are corrected, so every chapter is\n  listed and reachable.\n- Improved: chapter text no longer carries the site's leftover watermark,\n  making for a cleaner read.\n- Note: no action needed on your part — just update and enjoy.\n",
-  "releasedAt": "2026-10-11T00:03:27.494Z",
-  "signature": "lPEUmXcdkw5eACI4Pbddaq71ADPCbnFpU14xGOhJ96SXnegNDtNGQjk5pbW6Ak6YUOe7pGRAhb9Fs+so0bVSCA=="
+  "notes": "# v1.4.2 — four new sources on a shared scraper\n\n- New: four more reading sources join the library — Toonily (manhwa),\n  MangaRead (manga), ManhuaTop (manhua) and WuxiaWorld (light novel). They\n  appear alongside the sources you already browse, with the same search,\n  detail and chapter-list behaviour.\n- Improved: these four and ManhuaPlus now share one scraper built for the\n  Madara (WP-Manga) site theme, so fixes and improvements to that markup\n  benefit every one of them at once.\n- Note: no action needed on your part — just update and enjoy.\n",
+  "releasedAt": "2026-10-11T02:25:39.815Z",
+  "signature": "C5kGYfqSkAWUc9QWRWGvzijmgznIc9xdRP65+4ZxQIa7MNUv0dLYx1jhb/smblteinO6PWGO7NIVt1ZKXYj/BA=="
 }
