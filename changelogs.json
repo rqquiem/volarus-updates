@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.9",
+      "notes": "# v1.4.9 - backend survives interrupted streams instead of crashing\n\n- Fixed: the app no longer loses every connection and its own backend on a long\n  run. A single interrupted download or response - for example a cover image the\n  phone stops mid-way - could crash the embedded backend process, after which\n  every source and the app's own interface stopped responding all at once.\n  Interrupted stream and socket events are now treated as harmless, so the\n  backend keeps running and the next request succeeds.\n- Improved: the local backend now recovers from a busy port on restart instead\n  of staying down, and holds connections with proper keep-alive timeouts so a\n  half-open connection cannot wedge it.\n- Note: no action needed on your part - just update and enjoy.\n",
+      "releasedAt": "2026-10-14T00:42:17.423Z"
+    },
+    {
       "version": "1.4.8",
       "notes": "# v1.4.8 - Indonesian Hits covers fit, reader restores to the panel you left\n\n- Fixed: the Indonesian Hits row on Home no longer shows cropped or zoomed\n  covers. That row's sources return cover art with different proportions, which\n  the shared card style was centre-cropping; the covers are now shown in full on\n  those cards.\n- Fixed: the reader now reopens on the panel you left on. Leaving mid-chapter\n  and coming back used to land on the last panel and then jump to the next\n  chapter; the saved position is now tracked per chapter and restored to the\n  correct panel, and the automatic next-chapter jump no longer fires while the\n  position is being restored.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-13T01:55:50.181Z"
@@ -144,11 +149,6 @@
       "version": "1.3.26",
       "notes": "# v1.3.26 — Hide test-fixture entries\n\n- Fixed: leftover test/diagnostic entries (for example \"E2E History\",\n  \"Diag History\" and \"Drag History\", plus the earlier \"T\" stubs) no longer\n  appear in your History or Library. These came from old automated test runs.\n- The app now recognises fixture entries by their title prefix and by the\n  test-only sources they use, and filters them out everywhere — in History, in\n  the Library, in your reading stats, and when syncing — so they are never\n  shown and never uploaded to your account.\n- Real titles are unaffected: a genuine series such as \"Dragon Ball\",\n  \"Dragonslayer\" or \"Testament of Sister New Devil\" is still shown normally.\n- No other behaviour changed.\n",
       "releasedAt": "2026-10-07T13:03:00.928Z"
-    },
-    {
-      "version": "1.3.25",
-      "notes": "# v1.3.25 — Ignore placeholder entries\n\n- Fixed: junk \"placeholder\" entries — a bookmark or history item whose title is a\n  single character such as \"T\" — no longer appear in your Library or History.\n  Some leftover cloud test data contained these stubs, which showed up as a \"T\"\n  series duplicated many times.\n- The app now filters these placeholders everywhere: when loading your Library\n  and History, when importing a backup, when merging cloud data, and when\n  syncing — so they never render and are never re-uploaded to your account.\n- Your real bookmarks and reading history are untouched.\n- No other behaviour changed.\n",
-      "releasedAt": "2026-10-07T12:40:20.681Z"
     }
   ]
 }
