@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.12",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.4.12/volarus-v1.4.12.zip",
-  "zipSha256": "d47b35eed775dfcb24e2384ca1d0529c89b8730c21ffd8386538213c851cc0ad",
-  "zipBytes": 1302887,
+  "version": "1.4.13",
+  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.4.13/volarus-v1.4.13.zip",
+  "zipSha256": "290b921d2038cd820c9e98bc69e2ad7758339e04d2027d4875fc4206f9fb6f99",
+  "zipBytes": 1303401,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.12 - a hotfix for empty Home rows\n\n- Fixed: Home rows could come up empty after the previous update, showing \"No\n  items found\" on every row. They now load normally again.\n- Fixed: if your device was already stuck on empty rows, it recovers on the next\n  launch - the app no longer remembers an empty result.\n- Improved: when the sources are slow, Home now offers a retry instead of\n  showing an empty row.\n- Note: no action needed on your part - just update.\n",
-  "releasedAt": "2026-10-17T22:43:18.630Z",
-  "signature": "d7F1ZRpTn5TqqPM21UAGhuEAuRTHXO7tZLulIkkTsCMeqFSy3IbE6rhl8ymISKoyMG/tc0SvQb6jA3EgfDRYDw=="
+  "notes": "# v1.4.13 - faster Home, smoother scrolling, quicker launches\n\n- Improved: Home now opens with a limited number of cards per row instead of\n  every result at once, so it appears much faster. \"View All\" still opens the\n  full list.\n- Improved: listing responses are smaller, so Home loads faster on slow\n  connections.\n- Improved: repeat launches are near-instant - bundled app files are now kept\n  on your device instead of being re-checked every launch, while updates are\n  still checked each launch.\n- Improved: scrolling rows and the reader feel smoother - sideways row\n  scrolling and chapter restore no longer repeat unnecessary layout work every\n  frame.\n- Improved: Home and the rankings tabs now share one calculation per library\n  change instead of repeating it for each row, and duplicate background\n  requests are shared instead of fired twice.\n- Note: no action needed - just update.\n",
+  "releasedAt": "2026-10-20T14:47:09.696Z",
+  "signature": "8D0GJg+nGlp9N1Ds9pamSpog7UIgKGml4bYtAtWaYb5ItF7N+eEu7G10YQxxWj0KNd/tM87uVyyOfuWqPprwBA=="
 }
