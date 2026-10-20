@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "version": "1.4.13",
-  "zipUrl": "https://github.com/rqquiem/volarus-updates/releases/download/v1.4.13/volarus-v1.4.13.zip",
-  "zipSha256": "290b921d2038cd820c9e98bc69e2ad7758339e04d2027d4875fc4206f9fb6f99",
-  "zipBytes": 1303401,
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.13/volarus-v1.4.13.zip",
+  "zipSha256": "9ae0eea9e3845dd55f8097602adee6cbd8630eebac31984372806adc1b4133da",
+  "zipBytes": 1302906,
   "minAppVersion": "1.2.11",
   "notes": "# v1.4.13 - faster Home, smoother scrolling, quicker launches\n\n- Improved: Home now opens with a limited number of cards per row instead of\n  every result at once, so it appears much faster. \"View All\" still opens the\n  full list.\n- Improved: listing responses are smaller, so Home loads faster on slow\n  connections.\n- Improved: repeat launches are near-instant - bundled app files are now kept\n  on your device instead of being re-checked every launch, while updates are\n  still checked each launch.\n- Improved: scrolling rows and the reader feel smoother - sideways row\n  scrolling and chapter restore no longer repeat unnecessary layout work every\n  frame.\n- Improved: Home and the rankings tabs now share one calculation per library\n  change instead of repeating it for each row, and duplicate background\n  requests are shared instead of fired twice.\n- Note: no action needed - just update.\n",
-  "releasedAt": "2026-10-20T14:47:09.696Z",
-  "signature": "8D0GJg+nGlp9N1Ds9pamSpog7UIgKGml4bYtAtWaYb5ItF7N+eEu7G10YQxxWj0KNd/tM87uVyyOfuWqPprwBA=="
+  "releasedAt": "2026-10-20T23:56:47.907Z",
+  "signature": "P7KtIcde9gKPoFgogjj7wfbLWW+z0iru/er8YfPrrTrmXnqyjyz6t9B27R/tUz/iKUr9hgu4iEL6vA5h/OgeDQ=="
 }
